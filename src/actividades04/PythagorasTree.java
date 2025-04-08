@@ -37,8 +37,7 @@ public class PythagorasTree extends JPanel {
         trazaArbol(g, x2, y2, nuevoLado, angulo - 45, nivel - 1);
         trazaArbol(g, x2, y2, nuevoLado, angulo + 45, nivel - 1);
     }
-
-public class Main {
+    
     public static void main(String[] args) {
         
         // Árbol con profundidad 6
@@ -60,5 +59,5 @@ public class Main {
         frame.setLocationRelativeTo(null); // Centrar en pantalla
         frame.setVisible(true);
         }
-    }
+    
 }
