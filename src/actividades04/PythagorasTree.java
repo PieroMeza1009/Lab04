@@ -5,6 +5,7 @@ import java.awt.Graphics;
 import java.awt.Graphics2D;
 import java.awt.Color;
 import java.awt.Dimension;
+import javax.swing.JFrame;
 
 public class PythagorasTree extends JPanel {
     private int profundidad;
@@ -35,5 +36,19 @@ public class PythagorasTree extends JPanel {
         int nuevoLado = (int) (lado * 0.7);
         trazaArbol(g, x2, y2, nuevoLado, angulo - 45, nivel - 1);
         trazaArbol(g, x2, y2, nuevoLado, angulo + 45, nivel - 1);
+    }
+
+public class Main {
+    public static void main(String[] args) {
+        
+        // Árbol con profundidad 6
+        crearVentana("Árbol de Pitágoras - Nivel 6", 6);
+    
+        // Árbol con profundidad 8
+        crearVentana("Árbol de Pitágoras - Nivel 8", 8);
+    
+        // Árbol con profundidad 10
+        crearVentana("Árbol de Pitágoras - Nivel 10", 10);
+    
     }
 }
