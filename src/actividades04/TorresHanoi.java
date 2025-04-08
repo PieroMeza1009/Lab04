@@ -2,7 +2,7 @@ package actividades04;
 
 public class TorresHanoi {
     public static void main(String[] args) {
-        TorresHanoi(3, 1, 2, 3, )
+        TorresHanoi(3, 1, 2, 3);
 
     }
     public static void TorresHanoi(int discos, int torre1, int torre2, int torre3){
