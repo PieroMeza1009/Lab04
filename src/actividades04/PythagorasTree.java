@@ -21,6 +21,14 @@ public class PythagorasTree extends JPanel {
         // Llamada inicial para la recursión
         trazaArbol(g2d, 350, 600, 100, -90, profundidad);
         }
+    private void trazaArbol(Graphics2D g, int x, int y, int lado, double angulo, int nivel) {
+        if (nivel == 0 || lado < 2) return;
+    
+        int x2 = x + (int) (lado * Math.cos(Math.toRadians(angulo)));
+        int y2 = y + (int) (lado * Math.sin(Math.toRadians(angulo)));   
+        g.drawLine(x, y, x2, y2);
+    
+       
 
 
 
