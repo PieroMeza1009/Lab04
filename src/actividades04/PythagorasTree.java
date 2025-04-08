@@ -51,4 +51,10 @@ public class Main {
         crearVentana("Árbol de Pitágoras - Nivel 10", 10);
     
     }
+
+    private static void crearVentana(String titulo, int profundidad) {
+        JFrame frame = new JFrame(titulo);
+        frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+        frame.add(new PythagorasTree(profundidad));
+        frame.pack();
 }
