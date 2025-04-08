@@ -18,6 +18,10 @@ public class PythagorasTree extends JPanel {
         g2d.fillRect(0, 0, getWidth(), getHeight());
         g2d.setColor(Color.GREEN);
 
+        // Llamada inicial para la recursión
+        trazaArbol(g2d, 350, 600, 100, -90, profundidad);
+        }
+
 
 
 }
