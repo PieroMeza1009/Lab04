@@ -1,6 +1,10 @@
 package actividades04;
 
 import javax.swing.JPanel;
+import java.awt.Graphics;
+import java.awt.Graphics2D;
+import java.awt.Color;
+import java.awt.Dimension;
 
 public class PythagorasTree extends JPanel {
     private int profundidad;
