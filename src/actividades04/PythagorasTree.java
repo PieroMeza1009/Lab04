@@ -57,4 +57,8 @@ public class Main {
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         frame.add(new PythagorasTree(profundidad));
         frame.pack();
+        frame.setLocationRelativeTo(null); // Centrar en pantalla
+        frame.setVisible(true);
+        }
+    }
 }
