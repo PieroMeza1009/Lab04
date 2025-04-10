@@ -24,6 +24,13 @@ public class SubconjuntoPotenciasRestringidas {
         if (obligatorios.contains(index)) {
             return puedeAlcanzarObjetivo(nums, index + 1, objetivo - actual, obligatorios, excluidos, memo);
         }
+
+        boolean sinIncluir = puedeAlcanzarObjetivo(nums, index + 1, objetivo, obligatorios, excluidos, memo);
+        
+        boolean incluir = false;
+        if (actual <= objetivo) {
+            incluir = puedeAlcanzarObjetivo(nums, index + 1, objetivo - actual, obligatorios, excluidos, memo);
+        }
     
     
     }
