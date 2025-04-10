@@ -11,6 +11,9 @@ public class SubconjuntoPotenciasRestringidas {
     public static boolean puedeAlcanzarObjetivo(int[] nums, int index, int objetivo, Set<Integer> obligatorios, Set<Integer> excluidos, Map<String, Boolean> memo) {
         if (objetivo == 0) return true;
         if (index == nums.length) return false;
+
+        String key = index + "-" + objetivo;
+        if (memo.containsKey(key)) return memo.get(key);
     
     
     }
