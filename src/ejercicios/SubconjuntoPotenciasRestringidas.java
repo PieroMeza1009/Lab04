@@ -22,7 +22,7 @@ public class SubconjuntoPotenciasRestringidas {
         }
         
         if (obligatorios.contains(index)) {
-            return puedeAlcanzarObjetivo(nums, index + 1, objetivo - actual, obligatorios, excluidos, memo);
+            return puedeAlcanzarObjetivo(nums, index + 1, objetivo, obligatorios, excluidos, memo);
         }
 
         boolean sinIncluir = puedeAlcanzarObjetivo(nums, index + 1, objetivo, obligatorios, excluidos, memo);
@@ -77,8 +77,8 @@ public class SubconjuntoPotenciasRestringidas {
             {5, 2, 4, 8, 10, 3, 14},  //true
             {5, 4, 8, 10, 3, 5, 27},    //false
             {5, 4, 8, 10, 3, 6, 27},   //false
-            {6, 2, 16, 5, 7, 10, 33},   //false
-            {6, 2, 16, 5, 3, 10, 33},   //false
+            {5, 2, 16, 5, 7, 10, 33},   //false
+            {5, 2, 16, 5, 3, 10, 33},   //false
             {4, 2, 5, 1, 6, 13}        //false
         };
 
