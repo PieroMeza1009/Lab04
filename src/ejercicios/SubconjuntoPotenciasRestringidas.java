@@ -26,13 +26,21 @@ public class SubconjuntoPotenciasRestringidas {
         }
 
         boolean sinIncluir = puedeAlcanzarObjetivo(nums, index + 1, objetivo, obligatorios, excluidos, memo);
-        
+
         boolean incluir = false;
         if (actual <= objetivo) {
             incluir = puedeAlcanzarObjetivo(nums, index + 1, objetivo - actual, obligatorios, excluidos, memo);
         }
+
+        boolean resultado = sinIncluir || incluir;
+        memo.put(key, resultado);
+        return resultado;
+    }
     
-    
+    public static boolean verificar(int[] entrada) {
+        int n = entrada[0];
+        int[] nums = Arrays.copyOfRange(entrada, 1, entrada.length - 1);
+        int objetivo = entrada[entrada.length - 1];
     }
 
 }
