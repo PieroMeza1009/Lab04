@@ -78,4 +78,9 @@ public class SubconjuntoPotenciasRestringidas {
             {6, 2, 16, 5, 3, 10, 33},
             {4, 2, 5, 1, 6, 13}
         };
+
+        for (int[] entrada : entradas) {
+            System.out.println(verificar(entrada));
+        }
+    }
 }
