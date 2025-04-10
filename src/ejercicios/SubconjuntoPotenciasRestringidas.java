@@ -20,6 +20,10 @@ public class SubconjuntoPotenciasRestringidas {
         if (excluidos.contains(index)) {
             return puedeAlcanzarObjetivo(nums, index + 1, objetivo, obligatorios, excluidos, memo);
         }
+        
+        if (obligatorios.contains(index)) {
+            return puedeAlcanzarObjetivo(nums, index + 1, objetivo - actual, obligatorios, excluidos, memo);
+        }
     
     
     }
