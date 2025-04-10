@@ -18,16 +18,16 @@ public class BinarySearch {
 
     }
 
-    public static void main(String[] args) {
+    public static void main(String[] args){
         BinarySearch ob = new BinarySearch();
-            int arr[] = { 1, 2, 3, 4, 5 };
-            int n = arr.length;
-            int x = 4;
-            int position = ob.binarySearch(arr, 0, n - 1, x);
-            if (position == -1)
-                System.out.println("Element notfound !!!");
-            else
-                System.out.println("Element found at index:" + position);
-    }
+        int arr[] = { 1, 2, 3, 4, 5 };
+        int n = arr.length;
+        int x = 4;
+        int position = ob.binarySearch(arr, 0, n - 1, x);
+        if (position == -1)
+        System.out.println("Element notfound !!!");
+        else
+        System.out.println("Element found at index:" + position);
+        }
 }
 
