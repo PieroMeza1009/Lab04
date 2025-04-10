@@ -41,6 +41,9 @@ public class SubconjuntoPotenciasRestringidas {
         int n = entrada[0];
         int[] nums = Arrays.copyOfRange(entrada, 1, entrada.length - 1);
         int objetivo = entrada[entrada.length - 1];
+
+        Set<Integer> obligatorios = new HashSet<>();
+        Set<Integer> excluidos = new HashSet<>();
     }
 
 }
