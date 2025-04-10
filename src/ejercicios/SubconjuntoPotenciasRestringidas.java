@@ -50,6 +50,15 @@ public class SubconjuntoPotenciasRestringidas {
             if (esPotenciaDeDos(nums[i])) {
                 obligatorios.add(i);
             }
+            if (nums[i] % 5 == 0 && i + 1 < nums.length && nums[i + 1] % 2 == 1) {
+                excluidos.add(i);
+            }
+         }   
+
+    int sumaObligatorios = 0;
+    for (int idx : obligatorios) {
+        if (excluidos.contains(idx)) return false; // Conflicto: obligatorio pero excluido
+        sumaObligatorios += nums[idx];
     }
 
 }
