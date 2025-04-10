@@ -12,10 +12,12 @@ public class BinarySearch {
                 return binarySearch(arr, lo, mid - 1, x);
             return binarySearch(arr, mid + 1, hi, x);
         
-
-
-
         }
 
+        return-1;
+
     }
+
+    public static void main(String[] args) {
+
 }
