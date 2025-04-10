@@ -14,6 +14,12 @@ public class SubconjuntoPotenciasRestringidas {
 
         String key = index + "-" + objetivo;
         if (memo.containsKey(key)) return memo.get(key);
+
+        int actual = nums[index];
+
+        if (excluidos.contains(index)) {
+            return puedeAlcanzarObjetivo(nums, index + 1, objetivo, obligatorios, excluidos, memo);
+        }
     
     
     }
