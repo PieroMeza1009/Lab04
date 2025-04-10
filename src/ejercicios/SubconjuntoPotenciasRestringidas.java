@@ -39,7 +39,9 @@ public class SubconjuntoPotenciasRestringidas {
     
     public static boolean verificar(int[] entrada) {
         int n = entrada[0];
-        int[] nums = Arrays.copyOfRange(entrada, 1, entrada.length - 1);
+
+
+        int[] nums = Arrays.copyOfRange(entrada, 1, 1 + n);
         int objetivo = entrada[entrada.length - 1];
 
         Set<Integer> obligatorios = new HashSet<>();
@@ -71,12 +73,12 @@ public class SubconjuntoPotenciasRestringidas {
 
     public static void main(String[] args) {
         int[][] entradas = {
-            {5, 2, 4, 8, 10, 3, 14},
-            {5, 4, 8, 10, 3, 5, 27},
-            {5, 4, 8, 10, 3, 6, 27},
-            {6, 2, 16, 5, 7, 10, 33},
-            {6, 2, 16, 5, 3, 10, 33},
-            {4, 2, 5, 1, 6, 13}
+            {5, 2, 4, 8, 10, 3, 14},  //true
+            {5, 4, 8, 10, 3, 5, 27},    //false
+            {5, 4, 8, 10, 3, 6, 27},   //false
+            {6, 2, 16, 5, 7, 10, 33},   //false
+            {6, 2, 16, 5, 3, 10, 33},   //false
+            {4, 2, 5, 1, 6, 13}        //false
         };
 
         for (int[] entrada : entradas) {
